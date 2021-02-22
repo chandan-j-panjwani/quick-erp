@@ -1,0 +1,15 @@
+1. Every product belongs to a category
+2. Customers can buy products
+3. Suppliers will sell
+
+ER Diagram -> Class Diagram
+
+Products:
+Name, Description, HSN_CODE (foreign_key from gst table), category_id, quantity (jab multiple log ek saath use kr rhe h product tab quantity pe race condition aa skta hai, isliye transaction use kiye)
+
+
+EOQ -> Economic Order Quantity / JIT -> Just In Time
+EOQ matlab mera product acha chalta hai nd jab mera quantity ek threshold ke neeche aa gaya toh mai order daal dunga
+JIT matlab 0 hua toh order daal
+
+Danger level = 5 -> To give critical notifications
